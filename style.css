@@ -1,0 +1,114 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desatured-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body {
+  background-image: url('/img/pattern-background-desktop.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 600px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 20px;
+  box-shadow: 0 1px 50px grey;
+}
+.image img {
+  width: 100%; 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main-info {
+  text-align: center;
+  padding: 10px;
+}
+.main-info h1 {
+  font-size: 2.4rem;
+  padding: 20px;
+}
+.main-info p {
+  font-size: 1.6rem;
+  padding: 0 30px;
+  color: var(--desatured-blue);
+}
+.plan-info {
+  display: grid;
+}
+.container {
+  width: 85%;
+  height: 65%;
+  background-color: var(--pale-blue);
+  border-radius: 10px;
+  place-self: center;
+  display: flex;
+}
+.icon {
+  width: 50px;
+  margin: 20px;
+  background-image: url('/img/icon-music.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.plan {
+  padding-top: 25px;
+}
+.plan p {
+  font-size: 1.2rem;
+  color: var(--desatured-blue);
+  margin-top: 3px;
+}
+.container a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 35px 0 30px 50px;
+}
+.container a:hover {
+  text-decoration: none;
+  opacity: 75%;
+}
+.actions {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+.actions button { 
+  width: 300px;
+  height: 50px;
+  background-color: var(--bright-blue);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 10px; 
+}
+.actions button:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+.actions a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  justify-self: center;
+  padding-top: 10px;
+  color: var(--desatured-blue);
+}
+.actions a:hover {
+  color: black;
+}

@@ -15,7 +15,7 @@ html {
   font-family: 'Red Hat Display', sans-serif;
 }
 body {
-  background-image: url('/img/pattern-background-desktop.svg');
+  background-image: url('https://i.postimg.cc/XNFP2LSq/pattern-background-desktop.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,9 +62,11 @@ body {
 .icon {
   width: 50px;
   margin: 20px;
-  background-image: url('/img/icon-music.svg');
+  background-image: url('https://i.postimg.cc/qvBZvdt6/icon-music.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 30px;
 }
 .plan {
   padding-top: 25px;
